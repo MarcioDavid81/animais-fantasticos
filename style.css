@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+.azul{
+    background-color: teal;
+}
+.vermelho{
+    background-color: tomato;
+}
+
 img{
     display: block;
     max-width: 100%;
@@ -19,6 +26,10 @@ body{
     -webkit-font-smoothing: antialiased;
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+html.aumentar-fonte{
+    font-size: 150%;
+
 }
 
 .menu{
@@ -36,7 +47,7 @@ body{
 
 .menu li a{
     display: block;
-    padding: 10px;
+    padding: 20px;
     margin-right: 10px;
     color: #222;
     text-decoration: none;
@@ -96,6 +107,15 @@ body{
     height: 370px;
     overflow-y: scroll;
     grid-column: 2;
+
+    li{
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+            filter: invert(0.2);
+        }
+    }
 }
 
 .animais-lista::-webkit-scrollbar{
@@ -183,6 +203,8 @@ body{
     font-weight: bold;
 }
 
+
+
 @media (max-width: 768px){
     body{
         grid-template-columns: 1fr;
@@ -211,4 +233,51 @@ body{
         margin-bottom: 0px;
     }
 
+}
+
+.js .js-tabcontent section{
+    display: none;
+}
+.js-tabcontent section.ativo{
+    display: block !important;
+    animation: animacao 1s forwards;
+}
+
+@keyframes animacao{
+    from{
+        opacity: 0;
+        transform: translate3d(-20px, 0, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0);
+    }
+}
+.js .js-accordion dt{
+    cursor: pointer;
+}
+.js .js-accordion dd{
+    display: none;
+}
+.js-accordion dt::after{
+    content: '⬎';
+    margin-left: 10px;
+}
+.js-accordion dt.ativo::after{
+    content: '⬏';
+}
+.js-accordion dt.ativo + dd{
+    display: block;
+    animation: animacao 1s forwards;
+}
+
+
+.js .js-scroll{
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: 0.3s;
+}
+.js .js-scroll.ativo{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }

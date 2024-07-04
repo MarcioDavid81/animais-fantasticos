@@ -6,97 +6,118 @@
     <script>
         document.documentElement.className += ' js';
     </script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <title>Animais Fantásticos</title>
 </head>
 <body>
-    <nav class="menu js-menu">
-        <ul>
-            <li><a href="#animais">Animais</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="https://www.marciodavid.com" target="_blank">Dev → </a></li>
-        </ul>
-    </nav>
+    <div class="grid-container">
+        <nav class="menu js-menu">
+            <ul>
+                <li><a href="#animais">Animais</a></li>
+                <li data-dropdown>
+                    <a href="sobre.html">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="equipe.html">Equipe</a></li>
+                        <li><a href="socios.html">Sócios</a></li>
+                        <li><a href="investidores.html">Investidores</a></li>
+                    </ul>
+                </li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a data-modal="abrir" href="login.html">Login → </a></li>
+            </ul>
+        </nav>
+        <section class="grid-section animais js-scroll" id="animais">
+            <h1 class="titulo">ANIMAIS FANTÁSTICOS</h1>
+            <ul class="animais-lista js-tabmenu">
+                <li><img src="img/imagem1.jpg" alt=""></li>
+                <li><img src="img/imagem2.jpg" alt=""></li>
+                <li><img src="img/imagem3.jpg" alt=""></li>
+                <li><img src="img/imagem4.jpg" alt=""></li>
+                <li><img src="img/imagem5.jpg" alt=""></li>
+                <li><img src="img/imagem6.jpg" alt=""></li>
+            </ul>
+            <div class="animais-descricao js-tabcontent">
+                <section>
+                    <h2>Raposa</h2>
+                    <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
+                    <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                    <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a raposa vermelha é a mais comum.</p>
+                    <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
+                </section>
+                <section>
+                    <h2>Esquilo</h2>
+                    <p>Os esquilos são pequenos mamíferos e pertencem a uma família que compreende cerca de 500 espécies diferentes. O tamanho destes animais é variável.</p> <p>O esquilo mais pequeno mede cerca de 13 centímetros de comprimento desde a ponta da cauda até ao nariz, enquanto o maior pode medir até 90 centímentros.</p>
+                </section>
+                <section>
+                    <h2>Urso Pardo</h2>
+                    <p>Os ursos pardos, assim como outros animais do Gênero Ursus, têm o corpo pesado, a cauda curta e garras não retráteis, apresentando-se bastante afiadas.</p>
+                    <p>O pelo é longo e espesso, e a cor varia entre branco, dourado e castanho-escuro. São encontrados na Sibéria, Alasca, norte do México, Himalaia e norte da África.</p>
+                </section>
+                <section>
+                    <h2>Lobo</h2>
+                    <p>Os lobos são animais carnívoros que podem caçar em grupo ou de maneira solitária, roubar presas de outros predadores e se alimentarem de carniça.</p>
+                    <p>Vivem em grupos chamados de alcateia. Na alcateia, geralmente, apenas um casal se reproduz.</p>
+                    <p>O tempo de gestação é 61 a 64 dias, e a fêmea dá à luz, em média, cinco filhotes.</p>
+                </section>
+                <section>
+                    <h2>Macaco</h2>
+                    <p>Macacos são animais mamíferos, portanto, dentre suas principais características, podemos destacar a presença de pelos em seu corpo e de glândulas mamárias, as quais produzem leite, utilizado na alimentação dos filhotes.</p><p> Os pelos dos macacos apresentam diferentes tonalidades a depender da espécie estudada.</p>
+                </section>
+                <section>
+                    <h2>Leão</h2>
+                    <p>Segundo maior felino do mundo, o leão perde em tamanho apenas para o tigre. Os leões apresentam de 1,37 a 2 m de tamanho (corpo e cabeça), e sua cauda pode atingir até 100 cm de comprimento.</p><p> O peso varia entre 120 e 190 quilos, mas vale destacar que já foram descritos indivíduos com mais de 250 kg.</p>
+                </section>
+            </div>
+        </section>
+        <section class="grid-section faq js-scroll" id="faq">
+            <h1 class="titulo">FAQ</h1>
+            <dl class="faq-lista js-accordion">
+                <dt>Qual a idade dos animais?</dt>
+                <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                <dt>Eles são fantásticos?</dt>
+                <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+                <dt>Qual a diferença?</dt>
+                <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+                <dt>Como proteger?</dt>
+                <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
+            </dl>
+        </section>
+        <section class="grid-section contato js-scroll" id="contato">
+            <h1 class="titulo">Contato</h1>
+            <div class="mapa" data-tooltip aria-label="Endereço próximo ao estacionamento">
+                <img src="img/mapa.png" alt="">
+            </div>
+            <ul class="dados">
+                <li>contato@marciodavid.com</li>
+                <li>+55 (55) 99999-9999</li>
+                <li>Rua dos Piá Pançudo, 69</li>
+                <li>Tangamandápio - México City</li>
+            </ul>
+        </section>
+        <footer class="copy">
+            <p>Todos os Direitos Reservados</p>
+        </footer>
+    </div>
 
-    <section class="grid-section animais js-scroll" id="animais">
-        <h1 class="titulo">ANIMAIS FANTÁSTICOS</h1>
-        <ul class="animais-lista js-tabmenu">
-            <li><img src="img/imagem1.jpg" alt=""></li>
-            <li><img src="img/imagem2.jpg" alt=""></li>
-            <li><img src="img/imagem3.jpg" alt=""></li>
-            <li><img src="img/imagem4.jpg" alt=""></li>
-            <li><img src="img/imagem5.jpg" alt=""></li>
-            <li><img src="img/imagem6.jpg" alt=""></li>
-        </ul>
-
-        <div class="animais-descricao js-tabcontent">
-            <section>
-                <h2>Raposa</h2>
-                <p>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</p>
-                <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-                <p>De cerca de 40 espécies reconhecidas como raposas, somente 12 pertencem ao gênero Vulpes das "raposas verdadeiras", do qual a raposa vermelha é a mais comum.</p>
-                <p>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</p>
-            </section>
-            <section>
-                <h2>Esquilo</h2>
-                <p>Os esquilos são pequenos mamíferos e pertencem a uma família que compreende cerca de 500 espécies diferentes. O tamanho destes animais é variável.</p> <p>O esquilo mais pequeno mede cerca de 13 centímetros de comprimento desde a ponta da cauda até ao nariz, enquanto o maior pode medir até 90 centímentros.</p>
-            </section>
-            <section>
-                <h2>Urso Pardo</h2>
-                <p>Os ursos pardos, assim como outros animais do Gênero Ursus, têm o corpo pesado, a cauda curta e garras não retráteis, apresentando-se bastante afiadas.</p>
-                <p>O pelo é longo e espesso, e a cor varia entre branco, dourado e castanho-escuro. São encontrados na Sibéria, Alasca, norte do México, Himalaia e norte da África.</p>
-            </section>
-            <section>
-                <h2>Lobo</h2>
-                <p>Os lobos são animais carnívoros que podem caçar em grupo ou de maneira solitária, roubar presas de outros predadores e se alimentarem de carniça.</p>
-                <p>Vivem em grupos chamados de alcateia. Na alcateia, geralmente, apenas um casal se reproduz.</p>
-                <p>O tempo de gestação é 61 a 64 dias, e a fêmea dá à luz, em média, cinco filhotes.</p>
-            </section>
-            <section>
-                <h2>Macaco</h2>
-                <p>Macacos são animais mamíferos, portanto, dentre suas principais características, podemos destacar a presença de pelos em seu corpo e de glândulas mamárias, as quais produzem leite, utilizado na alimentação dos filhotes.</p><p> Os pelos dos macacos apresentam diferentes tonalidades a depender da espécie estudada.</p>
-            </section>
-            <section>
-                <h2>Leão</h2>
-                <p>Segundo maior felino do mundo, o leão perde em tamanho apenas para o tigre. Os leões apresentam de 1,37 a 2 m de tamanho (corpo e cabeça), e sua cauda pode atingir até 100 cm de comprimento.</p><p> O peso varia entre 120 e 190 quilos, mas vale destacar que já foram descritos indivíduos com mais de 250 kg.</p>
-            </section>
+    <section data-modal="container" class="modal-container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="">
+                <label for="email">Email</label>
+                <input type="text" for="email" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" for="senha" id="email">
+                <button type="submit">Entrar</button>
+            </form>
         </div>
     </section>
-    <section class="grid-section faq js-scroll" id="faq">
-        <h1 class="titulo">FAQ</h1>
-        <dl class="faq-lista js-accordion">
-            <dt>Qual a idade dos animais?</dt>
-            <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
 
-            <dt>Eles são fantásticos?</dt>
-            <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
-
-            <dt>Qual a diferença?</dt>
-            <dd>As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-
-            <dt>Como proteger?</dt>
-            <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
-        </dl>
-    </section>
-
-    <section class="grid-section contato js-scroll" id="contato">
-        <h1 class="titulo">Contato</h1>
-        <div class="mapa">
-            <img src="img/mapa.png" alt="">
-        </div>
-        <ul class="dados">
-            <li>contato@marciodavid.com</li>
-            <li>+55 (55) 99999-9999</li>
-            <li>Rua dos Piá Pançudo, 69</li>
-            <li>Tangamandápio - México City</li>
-        </ul>
-    </section>
-
-    <footer class="copy">
-        <p>Todos os Direitos Reservados</p>
-    </footer>
-    <script src="script.js"></script>
+    <script src="js/modules/script.js"></script>
+    <script src="js/modules/modal.js"></script>
+    <script src="js/modules/tooltip.js"></script>
+    <script src="js/modules/menu-dropdown.js"></script>
 </body>
 </html>

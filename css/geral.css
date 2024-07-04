@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-.azul{
-    background-color: teal;
-}
-.vermelho{
-    background-color: tomato;
-}
-
 img{
     display: block;
     max-width: 100%;
@@ -24,6 +17,8 @@ body{
     background-color: #faf6ed;
     color: #222;
     -webkit-font-smoothing: antialiased;
+}
+.grid-container{
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
@@ -206,7 +201,7 @@ html.aumentar-fonte{
 
 
 @media (max-width: 768px){
-    body{
+    .grid-container{
         grid-template-columns: 1fr;
     }
 

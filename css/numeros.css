@@ -1,0 +1,26 @@
+.numeros-grid{
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.numeros-grid h3{
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: .5rem;
+}
+
+.numeros-grid span{
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e54;
+}
+
+@media (max-width: 768px){
+    .numeros-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / 3;
+    }
+}
